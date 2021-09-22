@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background: lightgrey;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
+  margin: 40px auto;
+  margin-top: 80px;
+  width: 85%;
+  height: 700px;
+  border-radius: 25px;
+  box-shadow: 1px 10px 5px 10px gray;
   flex-direction: column;
+  background: lightseagreen;
+  flex-direction: column;
+}
+.searchbox{
+  width: 100%;
+  display: flex;
+  height: 10%;
+  /* border: 2px solid red; */
+}
+.Addsong{
+  height: 20%;
+  /* border: 2px solid yellow; */
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.songs{
+  /* border: 2px solid blue; */
+  height: 70%;
+  /* margin-top: 5%; */
+  padding-top: 1%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.song{
+  display: flex;
+  width: 100%;
+}
+.dropDown-content{
+  display: none;
+  position: absolute;
+  top: 3.3rem;
+  left: 2.8rem;
+  
+}
+.dropDown:hover .dropDown-content{
+  display: block;
+}
+.box{
+  position: relative;
+  padding: 1%;
+  left: 5%;
+  display: flex;
+}
+.box-1{
+  padding: 10%;
 }
