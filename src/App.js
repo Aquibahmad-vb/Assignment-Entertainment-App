@@ -3,52 +3,46 @@ import './App.css';
 import {Songs} from './components/Songs';
 import {SearchBox} from './components/SearchBox';
 import{AddSong} from './components/AddSong';
+import MusicData from './components/MusicData';
+import {Header} from './components/Header'
 
 
 function App() {
+
+  const [musicdata,Setmusicdata]=useState(MusicData);
+  const [searchSong, setsearchSong] = useState('');
+  // function for delete songs
   const onDelete=(songs)=>{
-    console.log("iam clicked",songs);
     Setmusicdata(musicdata.filter((event)=>{
       return event!==songs;
     }))
   }
-  const [musicdata,Setmusicdata]=useState([
-    {
-      id:1,
-      like:3,
-      title:"Com Truise - Flightwave",
-      subtitle:"Reed",
-      media:"",
-  },
-  {
-      id:2,
-      like:3,
-      title:"Claude Debussy - Clair de lune",
-      subtitle:"Reed",
-      media:"",
-  },
-  {
-      id:3,
-      like:2,
-      title:"Culture Shock - Troglodyte",
-      subtitle:"Doug",
-      media:"",
-  },
-  {
-      id:4,
-      like:2,
-      title:"Tycho - Montana",
-      subtitle:"Reed",
-      media:"",
-  }   
-  ])
+
+  // functiom for add new song
+  const addSong=(songName,songSubtitle)=>{
+    let _id;
+    musicdata.length===0?_id=1:_id=musicdata[musicdata.length-1].id+1;
+    const newSong={
+      id:_id,
+      title:songName,
+      subtitle:songSubtitle,
+      like:0,
+      media:""
+    }
+    console.log(newSong);
+    Setmusicdata([...musicdata,newSong]);
+  }
+
+
   return (
     <>
     <div className="canvas">
-      <div className="container"> 
-      <SearchBox/>
-    <Songs music={musicdata} onDelete={onDelete}/>
-    <AddSong/>
+      <Header/>
+      <div className="container">
+        <SearchBox setsearchSong={setsearchSong}/>
+        {/* {console.log(searchSong)} */}
+        <Songs music={musicdata} onDelete={onDelete} searchSong={searchSong}/>
+        <AddSong addSong={addSong}/>
       </div>
     </div>
     </>

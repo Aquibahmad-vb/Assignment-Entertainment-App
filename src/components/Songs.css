@@ -1,0 +1,13 @@
+.songs{
+    height: 75%;
+    overflow: auto;
+    overflow-x: hidden;
+  }
+
+#NoSong{
+    margin-left: 35%;
+    margin-top: 3%;
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}

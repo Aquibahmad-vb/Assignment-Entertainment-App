@@ -1,15 +1,12 @@
 import React from 'react'
+import './AddMediaPlayer.css'
 
 export const AddMediaPlayer = () => {
-    const style={
-        position:"relative",
-        width:"45rem",
-        color:"green",
-    }
+
     return (
         <>
-        <div className="box">   
-        <audio controls style={style}>
+        <div className="box mediaPlayer">   
+        <audio controls id="mediaPlayer">
         <source type="audio/mpeg"/>
         </audio>
         </div>
