@@ -7,57 +7,46 @@
 body{
   background: lightgrey;
 }
+.canvas{
+  width: 100%;
+  height: 100%;
+  /* border: 3px solid red; */
+}
 .container{
   display: flex;
-  margin: 40px auto;
-  margin-top: 80px;
-  width: 85%;
-  height: 700px;
+  margin: 20px auto;
+  margin-top: 0px;
+  width: 95%;
+  height: 550px;
   border-radius: 25px;
-  box-shadow: 1px 10px 5px 10px gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 1px 15px 5px 5px gray;
   flex-direction: column;
   background: lightseagreen;
   flex-direction: column;
+  overflow-y: auto;
 }
-.searchbox{
-  width: 100%;
-  display: flex;
-  height: 10%;
-  /* border: 2px solid red; */
-}
-.Addsong{
-  height: 20%;
-  /* border: 2px solid yellow; */
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
-.songs{
-  /* border: 2px solid blue; */
-  height: 70%;
-  /* margin-top: 5%; */
-  padding-top: 1%;
-}
-.song{
-  display: flex;
-  width: 100%;
-}
-.dropDown-content{
-  display: none;
-  position: absolute;
-  top: 3.3rem;
-  left: 2.8rem;
-  
-}
-.dropDown:hover .dropDown-content{
-  display: block;
-}
+
 .box{
   position: relative;
-  padding: 1%;
-  left: 5%;
+  padding: 0.8%;
+  left: 2%;
   display: flex;
+  flex-wrap: wrap;
 }
 .box-1{
   padding: 10%;
+}
+@media(max-width:300px){
+  .box{
+    left: 0;
+    padding: 0;
+  }
+}
+@media(min-width: 301px) and (max-width: 450px){
+  .box{
+    left: 0;
+    padding: 0;
+  }
 }

@@ -1,0 +1,115 @@
+.song{
+    display: flex;
+    /* width: 100%; */
+  }
+#songDetail{
+    width: 20rem;
+}
+#songtitle{
+    position: relative;
+    left: 6%;
+    top: 30%;
+    font-size: 14px;
+}
+#songSubTitle
+{
+    font-size: 12px;
+    padding-left: 1.3rem;
+}
+#dropDownBtn{
+    position: relative;
+    left: 1.5rem;
+    top:0.5rem;
+    width: 3rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+}
+#deleteBtn{
+    color: brown;
+    font-weight: bold;
+    width: 3.5rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    font-size: 10px;
+}
+.dropDown-content{
+    display: none;
+    position: absolute;
+    top: 3rem;
+    left: 3.8rem;
+    
+}
+.dropDown:hover .dropDown-content{
+    display: block;
+}
+@media(max-width:300px){
+    #songDetail{
+        width: 12rem;
+    }
+    #dropDownBtn{
+        /* padding-right: 130px; */
+        left:-9rem;
+        height: 1.5rem;
+        width: 2rem;
+    }
+    .dropDown-content{
+        display: none;
+        position: absolute;
+        top: 2rem;
+        left: -8.5rem;
+        /* right: -9rem; */
+    }
+    #deleteBtn{
+        width: 2.2rem;
+        height: 1.5rem;
+    }
+
+}
+@media(min-width: 301px) and (max-width: 450px){
+    #songDetail{
+        width: 12rem;
+    }
+    #dropDownBtn{
+        /* padding-right: 130px; */
+        top: 0.2rem;
+        left:-9.8rem;
+        height: 1.8rem;
+        width: 2.2rem;
+    }
+    .dropDown-content{
+        display: none;
+        position: absolute;
+        top: 2rem;
+        left: -9rem;
+        /* right: -9rem; */
+    }
+    #deleteBtn{
+        width: 2.3rem;
+        height: 1.8rem;
+    }
+
+}
+@media(min-width: 451px) and (max-width: 769px){
+    #songDetail{
+        width: 12rem;
+    }
+    #dropDownBtn{
+        /* padding-right: 130px; */
+        top: 0.2rem;
+        left:1rem;
+        height: 1.8rem;
+        width: 2.2rem;
+    }
+    .dropDown-content{
+        display: none;
+        position: absolute;
+        top: 2.2rem;
+        left: 2.8rem;
+        /* right: -9rem; */
+    }
+    #deleteBtn{
+        width: 2.3rem;
+        height: 1.8rem;
+    }
+}
+

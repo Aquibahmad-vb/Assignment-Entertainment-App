@@ -1,0 +1,32 @@
+.meadiaPlayer{
+    display: flex;
+}
+#mediaPlayer
+{
+    position: relative;
+    width: 30rem;
+}
+@media(max-width:300px){
+    #mediaPlayer{
+        right: 140px;
+        top: 32px;
+        width: 11rem;
+        height: 1.5rem;
+    }
+}
+@media(min-width: 301px) and (max-width: 450px){
+    #mediaPlayer{       
+        right: 140px;
+        top: 32px;
+        width: 15rem;
+        height: 1.8rem;
+    }
+}
+@media(min-width: 451px) and (max-width: 769px){
+    #mediaPlayer{       
+        /* right: 140px; */
+        top: 10px;
+        width: 20rem;
+        height: 2.5rem;
+    }
+}

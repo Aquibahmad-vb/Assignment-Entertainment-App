@@ -1,0 +1,85 @@
+.Addsong{
+    /* position: fixed;
+    bottom: 3%; */
+    height: 20%;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid blue; */
+    padding-left: 4%;
+  }
+#Addicon{
+    /* position: relative;
+    right: 99%; */
+    align-self: center;
+    margin-left: auto;
+    color: red;
+    font-size: 3rem;
+    padding-right: 4rem;
+}
+
+
+.SongDetail{
+    position: relative;
+    width: 15rem;
+    height: 2rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    border-radius: 2rem;
+    margin-left: 1rem;
+    outline: none;
+    border: silver;
+    left: 35%;
+}
+#submitbtn
+{
+    padding-left: 0;
+    width: 8rem;
+}
+
+@media(max-width:300px){
+    #Addicon{
+        padding-right: 1rem;
+        font-size: 2rem;
+    }
+    .SongDetail{
+        left: 15%;
+        width: 10rem;
+        /* padding: 20px; */
+        margin: 2px;
+    }
+    #submitbtn
+    {
+        margin-left: 14%;
+        width: 6rem;
+    }
+}
+@media(min-width: 301px) and (max-width: 450px){
+    #Addicon{
+        padding-right: 1rem;
+    }
+    .SongDetail{
+        width: 10rem;
+        left: 20%;
+        margin: 2px;
+    }
+    #submitbtn
+    {
+        margin-left: 14%;
+        width: 6rem;
+    }
+}
+@media(min-width: 451px) and (max-width: 769px){
+    #Addicon{
+        padding-right: 2rem;
+    }
+    .SongDetail{
+        width: 14rem;
+        left: 10%;
+        margin: 2px;
+    }
+    #submitbtn
+    {
+        margin-left: 22%;
+        width: 10rem;
+    }
+}
